@@ -1,0 +1,121 @@
+:host {
+    background: #343a40;
+    }
+     
+    #sidebar {
+    min-width: 200px;
+    max-width: 200px;
+    min-height: 100vh;
+    color: #fff;
+    transition: all 0.3s;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.5;
+    }
+     
+    #sidebar.hidden {
+      margin-left: -200px;
+    }
+     
+    a[data-toggle="collapse"] {
+      position: relative;
+    }
+     
+    @media (max-width: 575px) {
+      #sidebar {
+          margin-left: -200px;
+      }
+      #sidebar.hidden {
+          margin-left: 0;
+      }
+    }
+     
+    a, a:hover, a:focus {
+      color: inherit;
+    }
+     
+    #sidebar .sidebar-header {
+      padding: 20px;
+    }
+     
+    #sidebar ul li a {
+    padding: 15px;
+    display: block;
+    width: 100%;
+    }
+     
+    hr {
+    border-top: 1px solid #fff;
+    margin-top: 0;
+    }
+
+
+     /* .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color:#10327C;
+    border-color: #10327C;
+    width:121px;
+    height:35px;
+     
+  } */
+  /* .container-fluid{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:0.9rem;
+  } */
+ #main {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: -8px;
+   }
+    @media (min-width: 940px){
+      .col-md-3 {
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20% !important;
+        max-width: 20% !important;
+     }
+    .col-md-9 {
+  
+      flex: 1 0 80% !important;
+      max-width: 80% !important;
+     }
+  }
+  
+  .hide_panel {
+    display : none;
+  }
+  .show_panel {
+    display: unset;
+  }
+  
+  .main_margin_left{
+    margin-left:-100px;
+    
+  }
+  .main_margin_right{
+    margin-left:0px;
+  }
+  
+  .show_side{
+  
+    z-index: 4;
+    top: 0;
+    left: 0;
+  
+    /* overflow:hidden; */
+  }
+  
+  .fa-users:hover{
+    cursor: pointer;
+   }
+   @media (max-width: 767px){
+    .main_margin_left{
+      margin-left: 0px;
+      
+    }
+  }
+  
+  .col
+    {
+        flex-basis: 300px !important;
+        flex-grow: 1;
+        max-width:100%;
+    }

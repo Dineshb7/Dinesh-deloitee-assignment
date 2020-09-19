@@ -1,0 +1,20 @@
+{
+    "furnitures": [
+        {
+            "id": 1,
+            "name": "Chair",
+            "model": "Kappu Regular Chair",
+            "description": "Vass Shoes makes handcrafted men's shoess in herat of Biidapest.",
+            "color": "Black",
+            "pricePerUnit": "2600"
+        },
+        {
+            "id": 1,
+            "name": "Chair",
+            "model": "Kappu Regular Chair",
+            "description": "Vass Shoes makes handcrafted men's shoess in herat of Biidapest.",
+            "color": "Black",
+            "pricePerUnit": "2800"
+        }
+    ]
+}

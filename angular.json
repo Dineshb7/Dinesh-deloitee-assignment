@@ -28,6 +28,8 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -65,6 +67,7 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "proxyConfig": "proxy.config.json",
           "options": {
             "browserTarget": "Dinesh-app1:build"
           },
@@ -92,6 +95,8 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -123,6 +128,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Dinesh-app1"
+    }
+  },
+  "defaultProject": "Dinesh-app1",
+  "cli": {
+    "analytics": "a9d8aa59-44bf-4a5f-8fbd-21d26b6dc0d5"
+  }
 }
