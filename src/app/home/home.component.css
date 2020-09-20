@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .mainCardBox{
+   display: grid;
+   grid-template-columns: 1fr repeat(12, minmax(auto,60px)) 1fr;
+   grid-gap: 40px;
+   /* padding: 60px 0; */
+  }
+  
+  .mainContainer{
+    display: grid;
+    grid-template-columns: 2fr  12fr;
+    grid-gap: 10px; 
+  }
+  
+  .sidenavContainer{
+   grid-column: 1 / 2;
+   display: grid;
+   /* grid-gap: 10px; */
+   padding: 10px 0;
+  }
+  
+  .card-gallery{
+    grid-column: 2 / 12;
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px 0;
+  }
+  
+  .sidenavContent{
+    grid-column-end: 2;
+    background-color: red;
+  }
+  
+  .text-size{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: lighter;
+  }
+  
+  .cards{
+    grid-column: 2 / span 12;
+    display: grid;
+    grid-template-columns:  repeat(12, minmax(auto,60px))  ;
+    grid-gap: 40px;
+    padding: 10px 0;
+  }
+  
+  .card{
+    grid-column-end: span 4;
+    display: flex;
+    flex-direction: column;
+    /* #39393b */
+    /* background-color: lightgrey; */
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .card:hover{
+    transform: translateY(-7px);
+  }
+  
+  .card-image-container{
+    width: 100%;
+    padding-top: 67.25%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .card-image-container img{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  
+  .card-content{
+    padding: 4px 0px 0px 0px;
+  }
+  
+  .card-title{
+    font-weight: bold;
+  }
+  
+  .card-info{
+    display: flex;
+    /* align-self: end; */
+    align-items: center;
+  }
+  
+  .card-price{
+    margin-left: auto;
+    font-weight: 600;
+  }
+  
+  .card-subtitle{
+    font-weight: lighter;
+  }
+  
+  .card-rating{
+    padding: 10px 0px 0px;
+    display: flex;
+  }
+  
+  .card-cart{
+    margin-left: auto;
+    font-weight: 600;
+  }
+  
+  @media only screen and (max-width:1023px){
+    .card{
+      grid-column-end: span 6;
+    }
+  }
+  
+  @media only screen and (max-width:699px){
+    .card{
+      grid-column-end: span 12;
+    }
+    .mainCardBox{
+      grid-gap: 20px;
+    }
+  }
+  
+  @media only screen and (max-width:575px){
+    .card{
+      grid-column-end: span 12;
+      padding-bottom: 10px;
+    }
+    .mainCardBox{
+      grid-template-columns:  10px repeat(6, 1fr) 10px;
+      grid-gap: 10px;
+    }
+    .cards{
+      grid-column: 2 /span 6;
+      grid-template-columns:  repeat(12, minmax(auto,46px)) ;
+      grid-gap: 0px;
+    }
+  }
+  
+  .pager li.btn:active { 
+    box-shadow: none; 
+  }
+  
+  ngb-rating {
+    font-size: 16px;
+    color: #d39e00;
+    background-color: white;
+  }

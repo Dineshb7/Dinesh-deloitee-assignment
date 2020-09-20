@@ -102,6 +102,11 @@
   
     /* overflow:hidden; */
   }
+
+  .cartClass{
+    font-size: 24px;
+    margin: 6px 8px 0px;
+  }
   
   .fa-users:hover{
     cursor: pointer;

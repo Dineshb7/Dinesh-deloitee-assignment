@@ -21,12 +21,12 @@
 
         <form class="form-inline my-2 my-lg-0">
             <span><i class="fa fa-fw fa-search pr-sm-2"></i></span><input
-                class="form-control fa fa-fw fa-search mr-sm-2" style="width: 85% !important" type="search"
-                placeholder="Search" aria-label="Search">
+                class="form-control fa fa-fw fa-search mr-sm-2"  type="search"
+                placeholder="Search" aria-label="Search" (keyup)="searchTextFn($event)">
         </form>
         <ul class="navbar-nav mr-0">
             <li class="nav-item">
-                <i class="fa fa-shopping-cart"></i>
+                <i class="fa fa-cart-plus cartClass"></i>
             </li>
             <li class="nav-item">
                 <a class="nav-link" routerLinkActive="active" routerLink="/login">Login</a>

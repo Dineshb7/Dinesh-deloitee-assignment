@@ -1,1 +1,70 @@
-HOMEJjjjjj
+<!-- <div class="mainContainer">
+    <div class="sidenavContainer">
+        <div class="sidenavContent">
+            Hello
+        </div>
+    </div>
+    <div class="card-gallery">
+        <div class="mainCardBox">
+            <div class="cards">
+                <div class="card" *ngFor="let item of returnedArray" >
+                    <div class="card-image-container" (click)="cardSelectionFn(1)">
+                        <img
+                            src={{item.url}}>
+                    </div>
+                    <div class="card-content">
+                        <p class="card-title text-size">
+                            {{item.title}}
+                        </p>
+                    </div>
+                    <div class="card-info">
+                        <p class=" text-size card-subtitle"> {{item.content}}</p>
+                        <p class="card-price text-size" > {{item.price}}</p>
+                    </div>
+                    <div class="card-rating">
+                        <ngb-rating [max]="5" [(rate)]="currentRate" [readonly]="false"></ngb-rating>
+                        <i class="card-cart fa fa-cart-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="card-gallery">
+    <div class="mainCardBox">
+        <div class="cards">
+            <div class="card" *ngFor="let item of returnedArray; let i = index" >
+                <div class="card-image-container" (click)="cardSelectionFn(item.id)">
+                    <img
+                        src={{item.url}}>
+                </div>
+                <div class="card-content">
+                    <p class="card-title text-size">
+                        {{item.title}}
+                    </p>
+                </div>
+                <div class="card-info">
+                    <p class=" text-size card-subtitle"> {{item.type | uppercase}}</p>
+                    <p class="card-price text-size" > {{item.price}}</p>
+                </div>
+                <div class="card-rating">
+                    <ngb-rating [max]="5" [(rate)]="item.rating" [readonly]="false"></ngb-rating>
+                    <i class="card-cart fa fa-cart-plus"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="row">
+    <div class="col-xs-12 col-12">
+        <pagination [totalItems]="members.length" (pageChanged)="pageChanged($event)"
+            [(ngModel)]="currentPage" [boundaryLinks]="false" previousText="&lsaquo;" nextText="&rsaquo;"  (numPages)="smallnumPages = $event" [itemsPerPage]="6" pageBtnClass="btn"
+            class="pull-left">
+        </pagination>
+    </div>
+</div>
+

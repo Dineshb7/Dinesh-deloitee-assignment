@@ -1,5 +1,8 @@
 import { Component, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
+import { interval } from 'rxjs';
+import { tap } from 'rxjs/operators';
+import { AppserviceService } from './appservice.service';
 
 @Component({
   selector: 'app-root',
@@ -16,6 +19,7 @@ export class AppComponent {
   }
   constructor(
     private router: Router,
+    private service: AppserviceService
   ) { }
   ngOnInit() { }
   onClick(event): void {
@@ -29,5 +33,8 @@ export class AppComponent {
     if (this.clicked) {
       this._el.nativeElement.querySelector('.dropdown - menu').classList.toggle('show');
     }
+  }
+  searchTextFn(event) {
+    this.service.updateSearch(event.target.value);
   }
 }
