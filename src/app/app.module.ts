@@ -13,6 +13,7 @@ import { PaginationModule } from 'ngx-bootstrap/pagination';
 import {FormsModule} from '@angular/forms'
 import { NgxPaginationModule } from 'ngx-pagination';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     PaginationModule.forRoot(),
     FormsModule,
     NgbModule,
+    NgxSpinnerModule
     // NgxPaginationModule
   ],
   providers: [],

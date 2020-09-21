@@ -1,19 +1,5 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": [
+  "furnitures": [
     {
       "id": 1,
       "title": "Scandavian Collection",
@@ -32,7 +18,7 @@
       "price": "$1,600",
       "content": "Furniture can be a product of design and is considered a form of decorative art",
       "rating": 3,
-      "url": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
+      "url": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
       "productOf": "Kitchen",
       "subdesc":" Regular Chair"
     },
@@ -43,7 +29,7 @@
       "price": "$4,800",
       "content": "Furniture can be a product of design and is considered a form of decorative art",
       "rating": 1,
-      "url": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
+      "url": "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
       "productOf": "Furniture",
       "subdesc":"Kappu Regular "
     },
@@ -54,7 +40,7 @@
       "price": "$6,200",
       "content": "Furniture can be a product of design and is considered a form of decorative art",
       "rating": 2,
-      "url": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
+      "url": "https://images.unsplash.com/photo-1550226891-ef816aed4a98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
       "productOf": "Furniture",
       "subdesc":"Kappu Regular Chair"
     },
@@ -65,7 +51,7 @@
       "price": "$8,800",
       "content": "Furniture can be a product of design and is considered a form of decorative art",
       "rating": 5,
-      "url": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
+      "url": "https://images.unsplash.com/photo-1507904953637-96429a46671a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
       "productOf": "Kitchen",
       "subdesc":" Regular Chair"
     },
@@ -76,7 +62,7 @@
       "price": "$24,600",
       "content": "Furniture can be a product of design and is considered a form of decorative art",
       "rating": 2,
-      "url": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
+      "url": "https://images.unsplash.com/photo-1537212013010-de9c76f8f0ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
       "productOf": "Furniture",
       "subdesc":"Kappu Regular Chair"
     },
@@ -87,7 +73,7 @@
       "price": "$2,600",
       "content": "Furniture can be a product of design and is considered a form of decorative art",
       "rating": 4,
-      "url": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
+      "url": "https://images.unsplash.com/photo-1565105336789-e9392607c17b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
       "productOf": "Kitchen",
       "subdesc":"Kappu  Chair"
     },
@@ -98,7 +84,7 @@
       "price": "$42,600",
       "content": "Furniture can be a product of design and is considered a form of decorative art",
       "rating": 4,
-      "url": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
+      "url": "https://images.unsplash.com/photo-1567016432779-094069958ea5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
       "productOf": "Furniture",
       "subdesc":"Kappu Regular Chair"
     },
@@ -123,26 +109,336 @@
       "url": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
       "productOf": "Furniture",
       "subdesc":"Kappu  Chair"
-    }
-  ],
-  "furnitures": [
+    },
     {
-      "id": 1,
-      "name": "Chair",
-      "model": "Kappu Regular Chair",
-      "description": "Vass Shoes makes handcrafted men's shoess in herat of Biidapest.",
-      "color": "Black",
-      "pricePerUnit": "2600",
+      "id": 11,
+      "title": "Scandavian Collection",
+      "type": "LOUNGE",
+      "price": "$2,600",
+      "content": "Furniture can be a product of design and is considered a form of decorative art",
+      "rating": 4,
+      "url": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
+      "productOf": "Furniture",
       "subdesc":"Kappu Regular Chair"
     },
     {
-      "id": 1,
-      "name": "Chair",
-      "model": "Kappu Regular Chair",
-      "description": "Vass Shoes makes handcrafted men's shoess in herat of Biidapest.",
-      "color": "Black",
-      "pricePerUnit": "2800",
+      "id": 12,
+      "title": "Keee Set",
+      "type": "TABLE & CHAIRS",
+      "price": "$1,600",
+      "content": "Furniture can be a product of design and is considered a form of decorative art",
+      "rating": 3,
+      "url": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
+      "productOf": "Kitchen",
+      "subdesc":" Regular Chair"
+    },
+    {
+      "id": 13,
+      "title": "Momo",
+      "type": "SHELVES",
+      "price": "$4,800",
+      "content": "Furniture can be a product of design and is considered a form of decorative art",
+      "rating": 1,
+      "url": "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
+      "productOf": "Furniture",
+      "subdesc":"Kappu Regular "
+    },
+    {
+      "id": 14,
+      "title": "Penemille",
+      "type": "CHAIR",
+      "price": "$6,200",
+      "content": "Furniture can be a product of design and is considered a form of decorative art",
+      "rating": 2,
+      "url": "https://images.unsplash.com/photo-1550226891-ef816aed4a98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
+      "productOf": "Furniture",
       "subdesc":"Kappu Regular Chair"
+    },
+    {
+      "id": 15,
+      "title": "Kappu",
+      "type": "SHELVES",
+      "price": "$8,800",
+      "content": "Furniture can be a product of design and is considered a form of decorative art",
+      "rating": 5,
+      "url": "https://images.unsplash.com/photo-1507904953637-96429a46671a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
+      "productOf": "Kitchen",
+      "subdesc":" Regular Chair"
+    },
+    {
+      "id": 16,
+      "title": "Scandavian Collection",
+      "type": "LOUNGE",
+      "price": "$24,600",
+      "content": "Furniture can be a product of design and is considered a form of decorative art",
+      "rating": 2,
+      "url": "https://images.unsplash.com/photo-1537212013010-de9c76f8f0ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
+      "productOf": "Furniture",
+      "subdesc":"Kappu Regular Chair"
+    },
+    {
+      "id": 17,
+      "title": "Scandavian Collection",
+      "type": "LOUNGE",
+      "price": "$2,600",
+      "content": "Furniture can be a product of design and is considered a form of decorative art",
+      "rating": 4,
+      "url": "https://images.unsplash.com/photo-1565105336789-e9392607c17b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
+      "productOf": "Kitchen",
+      "subdesc":"Kappu  Chair"
+    },
+    {
+      "id": 18,
+      "title": "Scandavian Collection",
+      "type": "CHAIRS",
+      "price": "$42,600",
+      "content": "Furniture can be a product of design and is considered a form of decorative art",
+      "rating": 4,
+      "url": "https://images.unsplash.com/photo-1567016432779-094069958ea5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
+      "productOf": "Furniture",
+      "subdesc":"Kappu Regular Chair"
+    },
+    {
+      "id": 19,
+      "title": "Scandavian Collection",
+      "type": "Vessel",
+      "price": "$82,600",
+      "content": "Furniture can be a product of design and is considered a form of decorative art",
+      "rating": 6,
+      "url": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
+      "productOf": "Kitchen",
+      "subdesc":"Kappu Regular Chair"
+    },
+    {
+      "id": 20,
+      "title": "Scandavian Collection",
+      "type": "LOUNGE",
+      "price": "$20,600",
+      "content": "Furniture can be a product of design and is considered a form of decorative art",
+      "rating": 2,
+      "url": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
+      "productOf": "Furniture",
+      "subdesc":"Kappu  Chair"
+    },
+    {
+      "id": 21,
+      "title": "Scandavian Collection",
+      "type": "LOUNGE",
+      "price": "$2,600",
+      "content": "Furniture can be a product of design and is considered a form of decorative art",
+      "rating": 4,
+      "url": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
+      "productOf": "Furniture",
+      "subdesc":"Kappu Regular Chair"
+    },
+    {
+      "id": 22,
+      "title": "Keee Set",
+      "type": "TABLE & CHAIRS",
+      "price": "$1,600",
+      "content": "Furniture can be a product of design and is considered a form of decorative art",
+      "rating": 3,
+      "url": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
+      "productOf": "Kitchen",
+      "subdesc":" Regular Chair"
+    },
+    {
+      "id": 23,
+      "title": "Momo",
+      "type": "SHELVES",
+      "price": "$4,800",
+      "content": "Furniture can be a product of design and is considered a form of decorative art",
+      "rating": 1,
+      "url": "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
+      "productOf": "Furniture",
+      "subdesc":"Kappu Regular "
+    },
+    {
+      "id": 24,
+      "title": "Penemille",
+      "type": "CHAIR",
+      "price": "$6,200",
+      "content": "Furniture can be a product of design and is considered a form of decorative art",
+      "rating": 2,
+      "url": "https://images.unsplash.com/photo-1550226891-ef816aed4a98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
+      "productOf": "Furniture",
+      "subdesc":"Kappu Regular Chair"
+    },
+    {
+      "id": 25,
+      "title": "Kappu",
+      "type": "SHELVES",
+      "price": "$8,800",
+      "content": "Furniture can be a product of design and is considered a form of decorative art",
+      "rating": 5,
+      "url": "https://images.unsplash.com/photo-1507904953637-96429a46671a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
+      "productOf": "Kitchen",
+      "subdesc":" Regular Chair"
+    },
+    {
+      "id": 26,
+      "title": "Scandavian Collection",
+      "type": "LOUNGE",
+      "price": "$24,600",
+      "content": "Furniture can be a product of design and is considered a form of decorative art",
+      "rating": 2,
+      "url": "https://images.unsplash.com/photo-1537212013010-de9c76f8f0ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
+      "productOf": "Furniture",
+      "subdesc":"Kappu Regular Chair"
+    },
+    {
+      "id": 27,
+      "title": "Scandavian Collection",
+      "type": "LOUNGE",
+      "price": "$2,600",
+      "content": "Furniture can be a product of design and is considered a form of decorative art",
+      "rating": 4,
+      "url": "https://images.unsplash.com/photo-1565105336789-e9392607c17b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
+      "productOf": "Kitchen",
+      "subdesc":"Kappu  Chair"
+    },
+    {
+      "id": 28,
+      "title": "Scandavian Collection",
+      "type": "CHAIRS",
+      "price": "$42,600",
+      "content": "Furniture can be a product of design and is considered a form of decorative art",
+      "rating": 4,
+      "url": "https://images.unsplash.com/photo-1567016432779-094069958ea5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
+      "productOf": "Furniture",
+      "subdesc":"Kappu Regular Chair"
+    },
+    {
+      "id": 29,
+      "title": "Scandavian Collection",
+      "type": "Vessel",
+      "price": "$82,600",
+      "content": "Furniture can be a product of design and is considered a form of decorative art",
+      "rating": 6,
+      "url": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
+      "productOf": "Kitchen",
+      "subdesc":"Kappu Regular Chair"
+    },
+    {
+      "id": 30,
+      "title": "Scandavian Collection",
+      "type": "LOUNGE",
+      "price": "$20,600",
+      "content": "Furniture can be a product of design and is considered a form of decorative art",
+      "rating": 2,
+      "url": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
+      "productOf": "Furniture",
+      "subdesc":"Kappu  Chair"
+    },
+    {
+      "id": 31,
+      "title": "Scandavian Collection",
+      "type": "LOUNGE",
+      "price": "$2,600",
+      "content": "Furniture can be a product of design and is considered a form of decorative art",
+      "rating": 4,
+      "url": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
+      "productOf": "Furniture",
+      "subdesc":"Kappu Regular Chair"
+    },
+    {
+      "id": 32,
+      "title": "Keee Set",
+      "type": "TABLE & CHAIRS",
+      "price": "$1,600",
+      "content": "Furniture can be a product of design and is considered a form of decorative art",
+      "rating": 3,
+      "url": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
+      "productOf": "Kitchen",
+      "subdesc":" Regular Chair"
+    },
+    {
+      "id": 33,
+      "title": "Momo",
+      "type": "SHELVES",
+      "price": "$4,800",
+      "content": "Furniture can be a product of design and is considered a form of decorative art",
+      "rating": 1,
+      "url": "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
+      "productOf": "Furniture",
+      "subdesc":"Kappu Regular "
+    },
+    {
+      "id": 34,
+      "title": "Penemille",
+      "type": "CHAIR",
+      "price": "$6,200",
+      "content": "Furniture can be a product of design and is considered a form of decorative art",
+      "rating": 2,
+      "url": "https://images.unsplash.com/photo-1550226891-ef816aed4a98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
+      "productOf": "Furniture",
+      "subdesc":"Kappu Regular Chair"
+    },
+    {
+      "id": 35,
+      "title": "Kappu",
+      "type": "SHELVES",
+      "price": "$8,800",
+      "content": "Furniture can be a product of design and is considered a form of decorative art",
+      "rating": 5,
+      "url": "https://images.unsplash.com/photo-1507904953637-96429a46671a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
+      "productOf": "Kitchen",
+      "subdesc":" Regular Chair"
+    },
+    {
+      "id": 36,
+      "title": "Scandavian Collection",
+      "type": "LOUNGE",
+      "price": "$24,600",
+      "content": "Furniture can be a product of design and is considered a form of decorative art",
+      "rating": 2,
+      "url": "https://images.unsplash.com/photo-1537212013010-de9c76f8f0ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
+      "productOf": "Furniture",
+      "subdesc":"Kappu Regular Chair"
+    },
+    {
+      "id": 37,
+      "title": "Scandavian Collection",
+      "type": "LOUNGE",
+      "price": "$2,600",
+      "content": "Furniture can be a product of design and is considered a form of decorative art",
+      "rating": 4,
+      "url": "https://images.unsplash.com/photo-1565105336789-e9392607c17b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
+      "productOf": "Kitchen",
+      "subdesc":"Kappu  Chair"
+    },
+    {
+      "id": 38,
+      "title": "Scandavian Collection",
+      "type": "CHAIRS",
+      "price": "$42,600",
+      "content": "Furniture can be a product of design and is considered a form of decorative art",
+      "rating": 4,
+      "url": "https://images.unsplash.com/photo-1567016432779-094069958ea5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
+      "productOf": "Furniture",
+      "subdesc":"Kappu Regular Chair"
+    },
+    {
+      "id": 39,
+      "title": "Scandavian Collection",
+      "type": "Vessel",
+      "price": "$82,600",
+      "content": "Furniture can be a product of design and is considered a form of decorative art",
+      "rating": 6,
+      "url": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
+      "productOf": "Kitchen",
+      "subdesc":"Kappu Regular Chair"
+    },
+    {
+      "id": 40,
+      "title": "Scandavian Collection",
+      "type": "LOUNGE",
+      "price": "$20,600",
+      "content": "Furniture can be a product of design and is considered a form of decorative art",
+      "rating": 2,
+      "url": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80",
+      "productOf": "Furniture",
+      "subdesc":"Kappu  Chair"
     }
   ]
 }

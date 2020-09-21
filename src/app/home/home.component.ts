@@ -3,6 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { PageChangedEvent } from 'ngx-bootstrap/pagination';
 import { Observable } from 'rxjs';
 import { AppserviceService } from '../appservice.service';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
   selector: 'app-home',
@@ -23,21 +24,27 @@ export class HomeComponent implements OnInit {
   constructor(
     private router: Router,
     private activatedRoute: ActivatedRoute,
-    private service: AppserviceService) { }
+    private service: AppserviceService,
+    private spinner: NgxSpinnerService) { }
 
 
   ngOnInit(): void {
     this.members = [];
-    this.service.getmemberData().subscribe(JSONdata => {
+    this.spinner.show();
+    this.service.getmemberData().subscribe((JSONdata) => {
+      this.spinner.hide();
       this.members = JSONdata;
-      this.service.updateSearchedTextValue.subscribe(updatedText => {
+      this.service.updateSearchedTextValue.subscribe((updatedText) => {
         this.searchFilterArray = this.members && this.members.filter(
           member => member.productOf.trim().toLowerCase().includes(updatedText.trim().toLowerCase()));
         (this.searchFilterArray && this.searchFilterArray.length > 0) ? this.members = this.searchFilterArray : this.members = JSONdata
         this.returnedArray = this.members.slice(0, 6);
+      });
+    },
+      (err) => {
+        this.spinner.hide();
+        console.log("Service Failed", err)
       })
-    })
-
   }
 
   pageChanged(event: any): void {
@@ -49,6 +56,7 @@ export class HomeComponent implements OnInit {
 
 
   cardSelectionFn(cardId) {
+    console.log("retuuuuu", this.returnedArray)
     this.router.navigate(['/home', cardId], { state: { data: this.returnedArray } });
   }
 }

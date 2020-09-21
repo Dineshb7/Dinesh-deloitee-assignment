@@ -2,23 +2,23 @@
   "name": "dinesh-app1",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng add @ng-bootstrap/ng-bootstrap",
-    "start": "ng serve --port 8888",
+    "start": "node server.js",
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "hello": "ng g s appservice ",
+    "heroku-postbuild": "npm run start:proxy:mock:server && npm run build",
     "mock:server": "json-server  --watch api/data.json --routes api/routes.json",
     "start:proxy": "ng serve  --proxy-config proxy.config.json",
-    "start:proxy:mock:server": "concurrently --kill-others \"npm run mock:server\" \"npm run start:proxy\"",
-    "api": "json-server api/db.json --routes api/routes.json --no-cors=true"
+    "start:proxy:mock:server": "concurrently --kill-others \"npm run mock:server\" \"npm run start:proxy\""
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "~10.1.1",
     "@angular/common": "~10.1.1",
     "@angular/compiler": "~10.1.1",
+    "@angular/cli": "^10.1.2",
+    "@angular/compiler-cli": "^10.1.2",
     "@angular/core": "~10.1.1",
     "@angular/flex-layout": "^10.0.0-beta.32",
     "@angular/forms": "~10.1.1",
@@ -33,6 +33,7 @@
     "ngx-pagination": "^5.0.0",
     "ngx-pagination-bootstrap": "^1.6.0",
     "ngx-rating": "0.0.9",
+    "ngx-spinner": "^10.0.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
@@ -40,7 +41,7 @@
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1001.1",
     "@angular/cli": "^10.1.2",
-    "@angular/compiler-cli": "~10.1.1",
+    "@angular/compiler-cli": "^10.1.2",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
@@ -57,6 +58,10 @@
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~4.0.2"
+  },
+  "engines": {
+    "node": "^12.18.3",
+    "npm": "^6.14.8"
   },
   "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.1.",
   "main": "karma.conf.js",

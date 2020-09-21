@@ -14,12 +14,8 @@ export class AppserviceService {
   updateSearchedTextValue = this.updateSearchedText.asObservable();
   constructor(private http:HttpClient) { }
 
-  getUserData(){
-    return this.http.get('https://randomuser.me/api?results=100',httpOptions)
-  }
-
   getmemberData(){
-    return  this.http.get('/api/profile');
+    return  this.http.get('/api/furnitures');
   }
 
   updateSearch(SearchValue){
