@@ -7,7 +7,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "heroku-postbuild": "npm run start:proxy:mock:server && npm run build",
+    "heroku-postbuild": "npm run mock:server && npm run build",
     "mock:server": "json-server  --watch api/data.json --routes api/routes.json",
     "start:proxy": "ng serve  --proxy-config proxy.config.json",
     "start:proxy:mock:server": "concurrently --kill-others \"npm run mock:server\" \"npm run start:proxy\""
@@ -15,9 +15,9 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "~10.1.1",
+    "@angular/cli": "^10.1.2",
     "@angular/common": "~10.1.1",
     "@angular/compiler": "~10.1.1",
-    "@angular/cli": "^10.1.2",
     "@angular/compiler-cli": "^10.1.2",
     "@angular/core": "~10.1.1",
     "@angular/flex-layout": "^10.0.0-beta.32",
@@ -28,6 +28,7 @@
     "@angular/router": "~10.1.1",
     "@ng-bootstrap/ng-bootstrap": "^7.0.0",
     "bootstrap": "4.1.1",
+    "compression": "^1.7.4",
     "json-server": "^0.16.1",
     "ngx-bootstrap": "^6.1.0",
     "ngx-pagination": "^5.0.0",
