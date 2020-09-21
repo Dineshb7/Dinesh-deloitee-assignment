@@ -7,7 +7,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "heroku-postbuild": "npm run mock:server && npm run build",
+    "heroku-postbuild": " npm run build",
     "mock:server": "json-server  --watch api/data.json --routes api/routes.json",
     "start:proxy": "ng serve  --proxy-config proxy.config.json",
     "start:proxy:mock:server": "concurrently --kill-others \"npm run mock:server\" \"npm run start:proxy\""
