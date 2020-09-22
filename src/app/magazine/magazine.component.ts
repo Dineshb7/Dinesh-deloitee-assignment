@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class MagazineComponent implements OnInit {
 
   constructor(){}
-  ngOnInit(){
+  ngOnInit(): void{
 
   }
 }

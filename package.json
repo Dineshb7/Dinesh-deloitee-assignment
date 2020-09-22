@@ -7,6 +7,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "serve" : "ng serve --port 8888",
     "heroku-postbuild": " npm run build",
     "mock:server": "json-server  --watch api/data.json --routes api/routes.json",
     "start:proxy": "ng serve  --proxy-config proxy.config.json",

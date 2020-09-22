@@ -13,15 +13,15 @@ export class AppComponent {
   title = 'my-app';
   navbarOpen = false;
   public clicked = false;
-  _el: any;
-  toggleNavbar() {
+  element: any;
+  toggleNavbar(): any {
     this.navbarOpen = !this.navbarOpen;
   }
   constructor(
     private router: Router,
     private service: AppserviceService
   ) { }
-  ngOnInit() { }
+  ngOnInit(): void { }
   onClick(event): void {
     event.preventDefault();
     event.stopPropagation();
@@ -31,10 +31,11 @@ export class AppComponent {
   @HostListener('document:click', ['$event'])
   private clickedOutside(event): void {
     if (this.clicked) {
-      this._el.nativeElement.querySelector('.dropdown - menu').classList.toggle('show');
+      this.element.nativeElement.querySelector('.dropdown - menu').classList.toggle('show');
     }
   }
-  searchTextFn(event) {
+  searchTextFn(event): void {
     this.service.updateSearch(event.target.value);
   }
+
 }

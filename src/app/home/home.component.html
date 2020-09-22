@@ -5,7 +5,7 @@
             <div class="card" *ngFor="let item of returnedArray; let i = index" >
                 <div class="card-image-container" (click)="cardSelectionFn(item.id)">
                     <img
-                        src={{item.url}}>
+                        src={{item.url}} alt="Image">
                 </div>
                 <div class="card-content">
                     <p class="card-title text-size">

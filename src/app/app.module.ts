@@ -10,8 +10,7 @@ import { MagazineComponent } from './magazine/magazine.component';
 import { ShopComponent } from './shop/shop.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PaginationModule } from 'ngx-bootstrap/pagination';
-import {FormsModule} from '@angular/forms'
-import { NgxPaginationModule } from 'ngx-pagination';
+import {FormsModule} from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgxSpinnerModule } from 'ngx-spinner';
 

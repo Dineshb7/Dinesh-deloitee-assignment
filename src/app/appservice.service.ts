@@ -12,13 +12,13 @@ export class AppserviceService {
 
   updateSearchedText = new BehaviorSubject<string>('');
   updateSearchedTextValue = this.updateSearchedText.asObservable();
-  constructor(private http:HttpClient) { }
+  constructor(private http: HttpClient) { }
 
-  getmemberData(){
+  getmemberData(): any{
     return  this.http.get('/api/furnitures');
   }
 
-  updateSearch(SearchValue){
+  updateSearch(SearchValue): any{
     this.updateSearchedText.next(SearchValue);
   }
 }

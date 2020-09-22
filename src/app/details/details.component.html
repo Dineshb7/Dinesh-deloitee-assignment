@@ -5,7 +5,7 @@
 <div class="cardDetail">
     <div class="leftCard">
         <div class="card-img">
-            <img src="{{ selectedCardData && selectedCardData.url}}">
+            <img src="{{ selectedCardData[0] && selectedCardData[0].url}}" alt="Image">
         </div>
     </div>
 
@@ -13,13 +13,13 @@
         <div class="cards">
             <div class="card">
                 <div class="card-content">
-                    <p class=" text-size card-subtitle"> {{selectedCardData && selectedCardData.subdesc }}</p>
+                    <p class=" text-size card-subtitle"> {{selectedCardData[0] && selectedCardData[0].subdesc }}</p>
                     <p class="card-title text-size">
-                        {{selectedCardData && selectedCardData.title}}
+                        {{selectedCardData[0] && selectedCardData[0].title}}
                     </p>
                 </div>
                 <div class="card-info">
-                    <p class=" text-size"> {{selectedCardData && selectedCardData.content}}
+                    <p class=" text-size"> {{selectedCardData[0] && selectedCardData[0].content}}
                     </p>
 
                 </div>
@@ -34,7 +34,7 @@
                 <div class="item-footer">
                     <div class="item-price">
                         <h6 style="padding: 2px 0px 12px 0px;">Price per unit</h6>
-                        <p style="font-size: 21px; font-weight: bold;"> {{selectedCardData &&  selectedCardData.price}}</p>
+                        <p style="font-size: 21px; font-weight: bold;"> {{selectedCardData[0] &&  selectedCardData[0].price}}</p>
                     </div>
 
                     <button class="item-btn">BUY NOW</button>

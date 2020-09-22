@@ -13,9 +13,9 @@ import { NgxSpinnerService } from 'ngx-spinner';
 export class HomeComponent implements OnInit {
 
   currentRate = 2;
-  totalItems: number = 20;
-  currentPage: number = 1;
-  smallnumPages: number = 0;
+  totalItems = 20;
+  currentPage = 1;
+  smallnumPages = 0;
   encapsulation: ViewEncapsulation.None;
   members: any = [];
   returnedArray = [];
@@ -37,14 +37,14 @@ export class HomeComponent implements OnInit {
       this.service.updateSearchedTextValue.subscribe((updatedText) => {
         this.searchFilterArray = this.members && this.members.filter(
           member => member.productOf.trim().toLowerCase().includes(updatedText.trim().toLowerCase()));
-        (this.searchFilterArray && this.searchFilterArray.length > 0) ? this.members = this.searchFilterArray : this.members = JSONdata
+        (this.searchFilterArray && this.searchFilterArray.length > 0) ? this.members = this.searchFilterArray : this.members = JSONdata;
         this.returnedArray = this.members.slice(0, 6);
       });
     },
       (err) => {
         this.spinner.hide();
-        console.log("Service Failed", err)
-      })
+        console.log('Service Failed', err);
+      });
   }
 
   pageChanged(event: any): void {
@@ -55,8 +55,8 @@ export class HomeComponent implements OnInit {
   }
 
 
-  cardSelectionFn(cardId) {
-    console.log("retuuuuu", this.returnedArray)
+  cardSelectionFn(cardId: any): void{
+    console.log('retuuuuu', this.returnedArray);
     this.router.navigate(['/home', cardId], { state: { data: this.returnedArray } });
   }
 }

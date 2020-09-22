@@ -36,7 +36,7 @@ export class DetailsComponent implements OnInit {
           (cardsJSONDeatils) => {
             this.spinner.hide();
             this.cardsListData = cardsJSONDeatils;
-            this.selectedCardData = this.cardsListData && this.cardsListData.find(cardData => cardData.id == this.selectedCardId);
+            this.selectedCardData = this.cardsListData && this.cardsListData.filter(cardData => cardData.id == this.selectedCardId);
           },(err) => {
             this.spinner.hide();
             console.log("Service Failed", err)
@@ -46,7 +46,7 @@ export class DetailsComponent implements OnInit {
         this.cardsListData = history.state.data
         console.log("hjhkjhkjhjjk",this.cardsListData) ;
       }
-    this.selectedCardData = this.cardsListData && this.cardsListData.find(cardData => cardData.id == this.selectedCardId)
+    this.selectedCardData = this.cardsListData && this.cardsListData.filter(cardData => cardData.id == this.selectedCardId)
     this.selectedCardData ? this.spinner.hide(): this.spinner.show();
   };
 }
